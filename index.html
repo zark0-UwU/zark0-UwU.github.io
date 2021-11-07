@@ -6,12 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="vue/dist/vue.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="index.css " type="text/css">
+    <link rel="stylesheet" href="./styles/index.css " type="text/css">
 </head>
 
 <body>
+    <!--  
     <div id="app">
         {{ message }}
+    </div>
+    -->
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="theme-moon-mask"></div>
+            <svg class="sun-rays" width="91" height="91" viewBox="0 0 91 91" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="45.5" cy="45.5" r="35.5" stroke-linejoin="round" />
+            </svg>
+            <div class="theme-circle"></div>
+        </label>
     </div>
 
 </body>
