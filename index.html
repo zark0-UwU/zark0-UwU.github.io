@@ -2,41 +2,78 @@
 <html lang="en">
 
 <head>
-    <title>zark0 | o(≧∇≦o) | Hello World</title>
     <meta charset="UTF-8">
+    <title>zark0 | o(≧∇≦o) | Hello World</title>
+    <link rel="shortcut icon" href="./resources/brand-logo-watermark.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- header scripts -->
     <script src="vue/dist/vue.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="./styles/index.css " type="text/css">
+    <!-- END header scripts -->
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./styles/index.css" type="text/css">
+    <link rel="stylesheet" href="./styles/header.css" type="text/css">
+    <link rel="stylesheet" href="./styles/background-decorations.css" type="text/css">
+    <!-- END style sheets -->
+    <!-- Animations -->
+    <link rel="stylesheet" href="./animations/background.css" type="text/css">
+    <!-- END animations -->
 </head>
 
 <body>
     <!--  
+        ! Even tho the project has vue installed. 
+        ! By the time going vue will not be used, it is just there for future expansion.
     <div id="app">
         {{ message }}
     </div>
-    -->
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="theme-moon-mask"></div>
-            <svg class="sun-rays" width="91" height="91" viewBox="0 0 91 91" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="45.5" cy="45.5" r="35.5" stroke-linejoin="round" />
-            </svg>
-            <div class="theme-circle"></div>
-        </label>
+-->
+    <div class="container-fluid">
+        <!-- Background animtion-->
+        <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        <!-- header -->
+        <header>
+            <!-- navbar -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#">Tecnologies</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="https://github.com/zark0-UwU">Github</a></li>
+                </ul>
+            </nav>
+            <!-- logo -->
+            <div class="logo"><img src="./resources/brand-logo.jpg" alt="Logo"
+                    onclick="location.href = 'index.html';" /></div>
+            <!-- title & content -->
+            <section class="header-content">
+                <h1>Hi! Im José Zarco</h1>
+                <p>Im a software developer <strong>constantly seeking for new challeges.</strong></p>
+                <img src="./resources/id-photo.jpg" alt="Profile Photo">
+            </section>
+        </header>
     </div>
-
+    <!-- <div class="container-fluid">
+        
+    </div> -->
+    <div id="about-me" class="topic">
+        <h2>about me</h2>
+    </div>
+    <div id="tecnologies" class="topic">
+        <h2>My favourite tecnologies</h2>
+    </div>
+    <div id="top-projects" class="topic">
+        <h2>My featured pojects</h2>
+    </div>
 </body>
 <footer>
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello World'
-            }
-        })
-    </script>
+
 </footer>
 
 </html>

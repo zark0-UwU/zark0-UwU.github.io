@@ -1,0 +1,44 @@
+/* ============= background styling ========= */
+.background {
+    background: linear-gradient(132deg, #fc415a, #601dd4, #cb18df);
+    background-size: 400% 400%;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0px;
+}
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #d7d4e4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+}
+.cube:nth-child(2n) {
+    border-color: #fff;
+}
+.cube:nth-child(2) {
+    left: 25vw;
+    top: 40vh;
+}
+.cube:nth-child(3) {
+    left: 75vw;
+    top: 50vh;
+}
+.cube:nth-child(4) {
+    left: 90vw;
+    top: 10vh;
+}
+.cube:nth-child(5) {
+    left: 10vw;
+    top: 85vh;
+}
+.cube:nth-child(6) {
+    left: 50vw;
+    top: 10vh;
+}
