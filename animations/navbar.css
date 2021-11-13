@@ -1,0 +1,20 @@
+:root {
+    --transition-speed: 600ms;
+}
+.navbar {
+    transition: width var(--transition-speed) ease;
+}
+.nav-link {
+    transition: var(--transition-speed);
+}
+.logo svg {
+    transition: var(--transition-speed);
+}
+
+.logo-text {
+    transition: var(--transition-speed);
+}
+.fa-primary,
+.fa-secondary {
+    transition: var(--transition-speed);
+}

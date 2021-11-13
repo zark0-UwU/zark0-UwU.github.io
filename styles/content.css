@@ -1,0 +1,6 @@
+main {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    min-height: calc(100vh - 2rem);
+}
+/* TODO: put here the custom css for page content block 'main' */
